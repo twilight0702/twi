@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>1500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>学生选课管理系统</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>100</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <widget class="QWidget" name="page_3">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>全部学生信息</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="acceptDrops">
+                <bool>true</bool>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="text">
+                <string>请输入您要查询的内容</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>student_id</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>name</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>class</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>phone</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>birthday</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>address</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="check">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="2" column="0">
+              <widget class="QPushButton" name="add">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>添加学生</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="deleteData">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="delete_2">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>删除学生</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QTableView" name="tableView"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="2" column="0">
+           <widget class="QWidget" name="widget_4" native="true">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="2" column="5">
+              <widget class="QPushButton" name="save_2">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="delete_4">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>删除课程</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="showAllStudents_2">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>显示该学生全部课程信息</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="add_3">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>添加课程</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>请输入您要查询的内容</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox_3">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>course_id</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>course_name</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>credit</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>term</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>classroom</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>grade</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="check_2">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="student_text">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QTableView" name="tableView_2"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_5">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <widget class="QLabel" name="course_text">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QTableView" name="tableView_3"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget_5" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="return_2">
+               <property name="minimumSize">
+                <size>
+                 <width>400</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>400</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>返回上一级</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="return_3">
+               <property name="minimumSize">
+                <size>
+                 <width>400</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>400</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>返回至主界面</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page">
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget_7" native="true">
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>全部课程</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>增加课程</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>删除课程</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTableView" name="tableView_4"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_8" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_13">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="showAllStudents">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>全部学生</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="showAllStudents_4">
+        <property name="font">
+         <font>
+          <family>Agency FB</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>全部课程</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
